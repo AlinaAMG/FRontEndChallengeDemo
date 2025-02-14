@@ -1,3 +1,3 @@
-# frontEncChallengeDEmo Bootcamp
+# frontEndChallengeDemo Bootcamp
 # HTML
 #CSS
