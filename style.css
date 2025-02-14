@@ -1,0 +1,578 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.header-img-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+}
+.header-img-links img {
+  margin-right: 20px;
+}
+
+.header-img-links ul {
+  display: inline-block;
+}
+.header-img-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+}
+
+.header-img-links ul li a {
+  font-size: 1rem;
+  border-right: 1px solid black;
+  padding: 0 10px;
+  color: blue;
+  text-align: right;
+}
+.header-img-links ul li a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+.header-img-links ul li:last-child a {
+  border-right: none;
+}
+.sign-up {
+  font-weight: 600;
+}
+
+.links-header {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  margin: 0;
+}
+
+.links-header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: end;
+  gap: 1px;
+}
+
+.links-header ul li {
+  padding: 5px 25px;
+  font-size: 0.8rem;
+  background-color: #003366;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px 3px 0 0 ;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.links-header ul li:first-child {
+  background-color: #34679b;
+  border-bottom: none;
+  font-weight: bold;
+  padding: 8px 30px;
+  font-size: 0.9rem;
+}
+.links-header ul li:hover {
+  text-decoration: underline;
+  transform: scale(0.98);
+}
+
+.empty-div {
+  background-color: #34679b;
+  height: 30px;
+  width: 100%;
+  margin-top: 0;
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.section1 {
+  width: 20%;
+}
+
+.section1 .card1,
+.section1 .card2 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: rgb(234, 231, 231);
+  height: 25vh;
+  margin: 10px 10px 0 0;
+}
+
+.section1 .card1 h3 {
+  font-size: 1rem;
+  background-color: rgb(190, 190, 190);
+  padding: 5px  8px;
+  width: 100%;
+ 
+}
+
+.blue-thick-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid rgb(22, 107, 156);
+}
+
+.card1-list1 {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.card1-list1 p {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.card1-list1 button {
+  display: block;
+  border-left: 2px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 3px;
+  background-color: #d3d1d1;
+  padding: 4px 7px;
+  margin-left: 10px;
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+.card1-list1 button:hover {
+  background-color: rgb(22, 107, 156);
+  color: white;
+}
+
+.section1 .card2 {
+  margin-top: 20px;
+}
+.card2-list1-news {
+  font-weight: 600;
+  font-size: 1rem;
+  
+  margin-left:3px;
+  
+}
+.card2-list1,
+.card2-list2 {
+  list-style: none;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.card2-list1 {
+  background-color: rgb(193, 192, 192);
+  padding: 3px;
+}
+
+.card2-list1 li {
+  display: inline-block;
+  padding: 3px;
+}
+.card2-list1 li a {
+  margin-left: 60px;
+  color: blue;
+}
+.card2-list2 {
+  background-color: #f5f1f1;
+  height: 30vh;
+}
+.card2-list2 li q {
+  margin: 5px 0 0 10px;
+  display: inline-block;
+}
+.card2-list2 li q a {
+  color: blue;
+}
+.card2-list2 li q a:hover,
+.card2-list1 li a:hover {
+  color: rgb(27, 146, 244);
+  text-decoration: none;
+}
+.card2-list2 li span {
+  display: inline-block;
+  text-align: right;
+
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.card-img img {
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+}
+.card-img {
+  margin-top: 40px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.card-img .logo-card1 {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.card-img .logo-card2,
+.card-img .logo-card3,
+.card-img .logo-card4 {
+  width: 27%;
+  margin-right: 2px;
+  margin-bottom: 12px;
+}
+
+.section2 {
+  width: 80%;
+}
+.section2-send-request {
+  flex: 1;
+}
+.section2 h2 {
+  font-size: 1.3rem;
+  margin: 10px 0 10px;
+  padding: 10px 0;
+  color: rgb(4, 33, 181);
+}
+.send-request-money {
+  margin: 10px 0;
+}
+
+.send-request-money a {
+  color: rgb(52, 94, 246);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.send-request-money p {
+  font-size: 0.7rem;
+}
+.paypal-button-container {
+  padding: 10px 20px;
+  background-color: rgb(22, 107, 156);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: rgb(27, 146, 244);
+}
+
+.paypal-button-container:hover {
+  background-color: rgb(27, 146, 244);
+}
+.section2-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-container {
+  flex: 1;
+}
+
+.members {
+  margin-top:50px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.worldwide {
+  color: rgb(52, 94, 246);
+}
+.signup {
+  padding: 10px;
+  background-color: rgb(244, 244, 201);
+  border: 1px solid rgb(172, 172, 76);
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.signup a {
+  color: rgb(52, 94, 246);
+  font-weight: 600;
+}
+.spotlight {
+  background-color: rgb(228, 225, 225);
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 5px;
+}
+.spotlight h3 {
+  color: #222;
+  font-size:1rem;
+}
+.container-img-text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.paypal-container {
+  font-size: 0.8rem;
+  margin-right: 20px;
+}
+.img-text {
+  margin-right: 10px;
+}
+.paypal-container a {
+  color: rgb(52, 94, 246);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.paypal-container a:hover,
+.signup a:hover {
+  color: rgb(27, 146, 244);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer ul li {
+  list-style: none;
+  font-size: 1rem;
+  margin: 50px 0 20px;
+}
+
+footer ul li a {
+  color: rgb(52, 94, 246);
+  margin-top: 50px;
+  padding: 0 10px;
+  border-right: 1px solid rgb(16, 93, 217);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+footer ul li:last-child a {
+  border-right: none;
+}
+
+.footer {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+footer a {
+  color: rgb(52, 94, 246);
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.container-img {
+  margin-bottom: 40px;
+}
+.container-img img {
+  margin-left: 30px;
+}
+
+@media (max-width: 1000px) {
+  .section1 {
+    width: 30%;
+  }
+  footer ul li a {
+    margin-top: 30px;
+    font-size: 0.8rem;
+  }
+  .container-img {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section1 {
+    width: 40%;
+  }
+  .links-header ul li {
+    font-size: 0.6rem;
+  }
+
+  footer ul li a {
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+  .container-img img {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section1 {
+    width: 50%;
+  }
+  .header-img-links img {
+    width: 20%;
+  }
+  .links-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .links-header ul li {
+    font-size: 0.6rem;
+    padding: 8px;
+  }
+  footer ul li a {
+    font-size: 0.5rem;
+    margin-left: 0;
+    padding: 4px;
+  }
+  .container-img img {
+    margin-bottom: 80px;
+  }
+  .card2 ul.card2-list1 {
+    display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+  }
+  .section1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 .card1 {
+    height: 25vh;
+    margin-bottom: 0;
+  }
+  .section1 .card2 {
+    height: 20vh;
+    margin-top: 40px;
+  }
+
+  .section2 {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .section2 h3 {
+    font-size: 0.8rem;
+  }
+  .section2-btn {
+    margin-bottom: 10px;
+  }
+  .paypal-button-container {
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 0.6rem;
+    width: 100px;
+    height: 40px;
+  }
+  .card-img {
+    margin-top: 60px;
+    width: 80%;
+    text-align: center;
+  }
+  .members {
+    margin-top: 20px;
+  }
+  .header-img-links {
+    margin: 10px 0;
+  }
+  .header-img-links img {
+    width: 80px;
+    margin: 0;
+  }
+  .header-img-links div ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-img-links div ul li a {
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 0 5px;
+  }
+  .links-header ul li {
+    font-size: 0.5rem;
+    padding: 5px;
+  }
+  .links-header ul li:first-child {
+    padding: 5px 20px;
+    font-size: 0.7rem;
+  }
+  .send-request-money p {
+    font-size: 0.7rem;
+  }
+  .send-request-money a {
+    font-size: 0.8rem;
+  }
+  .members {
+    font-size: 0.8rem;
+  }
+  .signup {
+    font-size: 0.7rem;
+  }
+  .container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .container-img img {
+    width: 40px;
+    margin:10px 0;
+   
+  }
+  .section2{
+    margin-top:0;
+    
+  }
+  .section2 h2{
+    font-size:1rem;
+  }
+  footer ul li a {
+    font-size: 0.5rem;
+    padding: 2px 3px;
+    margin-top: 30px;
+  }
+  .paypal-container a {
+    font-size: 0.8rem;
+  }
+  .paypal-container p {
+    font-size: 0.7rem;
+  }
+}
